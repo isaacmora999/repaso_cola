@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reconocimiento de Voz (Flask)</title>
+  <script src="/static/script.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e0f7fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+    button {
+      background: #00796b;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background: #004d40;
+    }
+    #resultado {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 400px;
+    }
+    .nombre {
+      background: #ffffff;
+      border: 1px solid #b2dfdb;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 5px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎤 Dime tu nombre</h1>
+  <button onclick="enviarPeticion()">Escuchar</button>
+  <div id="resultado"></div>
+</body>
+</html>
+
+
